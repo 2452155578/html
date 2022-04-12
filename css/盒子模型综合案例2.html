@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型综合案例2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+        
+        li {
+            list-style: none;
+            /* 去掉li无序列表前面的小圆点 ，页面中去掉全部的li前面的符号*/
+        }
+        
+        body {
+            width: 248px;
+            height: 163px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+        }
+        
+        .box h3 {
+            height: 32px;
+            border: 1px dotted #ccc;
+            /* dotted  虚线 */
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 32px;
+            /* 让行高等于盒子高度，就可以让文字垂直居中 */
+            padding-left: 15px;
+        }
+        
+        .box ul li a {
+            font-size: 12px;
+            color: #666;
+            text-decoration: none;
+            /* 取消链接的下划线 */
+        }
+        
+        .box ul li a:hover {
+            text-decoration: underline;
+            /* ******鼠标经过链出现下划线 */
+        }
+        
+        .box ul li {
+            height: 23px;
+            line-height: 23px;
+            /* 垂直居中+line-hight */
+            padding-left: 20px;
+            /* 左边空出的距离 */
+        }
+        
+        .box ul {
+            margin-top: 7px;
+            /* 距离上边距 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>评优购快报</h3>
+        <ul>
+            <li>
+                <a href="#">特惠爆款耳机5折起</a>
+            </li>
+            <li>
+                <a href="#">阿萨德即可看到</a>
+            </li>
+            <li>
+                <a href="#">阿双方呼吁</a>
+            </li>
+            <li>
+                <a href="#">色统计与偶他说的</a>
+            </li>
+            <li>
+                <a href="#">未通过IU有原图突然同意</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

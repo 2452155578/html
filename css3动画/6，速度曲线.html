@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>速度曲线细节</title>
+    <style>
+        /* animation-timing-function:规定动画速度曲线  默认是ease */
+        /* linear 动画从头到尾速度相同匀速 ease：默认，动画从低速开始然后加快 在结束前面满 ease-in 低速开始 ease-out 低速结束 ease-in-out 动画以低速开始和结束 */
+        /* steps（）   指定了时间函数中的间隔数量(俗称步长)  有steps就不用写ease或者linear */
+        
+        div {
+            overflow: hidden;
+            font-size: 20px;
+            width: 0;
+            height: 30px;
+            background-color: pink;
+            /* 强制文字在一行内显示 */
+            white-space: nowrap;
+            animation: w 4s steps(10) forwards;
+        }
+        
+        @keyframes w {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>我喜欢你呀超级喜欢你</div>
+</body>
+
+</html>

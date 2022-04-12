@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5新增的表单属性</title>
+    <style>
+        /* 修改placeholder里面的字体颜色 */
+        
+        input::placeholder {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <!-- 提示文本 placeholder=""   autofocus   页面加载完成自动聚焦成指定表单-->
+        <!-- autocomplete    默认是打开的。由于隐私问题需要关闭 -->
+        <input type="search" name="sear" id="" required="required" placeholder="pink老师" autofocus="autofocus" autocomplete="off">
+        <!-- multiple 可以提交多个文件  文件域使用 -->
+        <input type="file" name="" id="" multiple="multiple">
+        <input type="submit" value="提交">
+    </form>
+
+</html>

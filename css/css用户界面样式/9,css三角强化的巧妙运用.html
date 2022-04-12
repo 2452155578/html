@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三角强化的巧妙运用</title>
+    <style>
+        .box1 {
+            width: 0;
+            height: 0;
+            /* 把上边框宽度调大，并且设置为透明 */
+            /* border-top: 100px solid transparent;
+            border-right: 50px solid red; */
+            /* 左边和下边的边框宽度设置为0 */
+            /* border-bottom: 0px solid blue;
+            border-left: 0px solid yellow; */
+            /* 1.只保留右边边框有颜色 */
+            border-color: transparent red transparent transparent;
+            /* 2.样式都是solid */
+            border-style: solid;
+            /* 3，上边边框要大，右边框  宽度要小。其余边框改为0 */
+            border-width: 100px 50px 0 0;
+        }
+        
+        .price {
+            line-height: 24px;
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        
+        .ms {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        
+        .ms i {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-color: transparent white transparent transparent;
+            border-style: solid;
+            border-width: 24px 10px 0 0;
+        }
+        
+        .sc {
+            font-size: 12px;
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="price">
+        <span class="ms">1331
+            <i></i>
+        </span>
+        <span class="sc">4322</span>
+    </div>
+</body>
+
+</html>

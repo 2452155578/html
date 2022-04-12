@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奔跑的熊大</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        div {
+            position: absolute;
+            width: 140.5px;
+            height: 72px;
+            background: url(../css3动画/xd.jpg) no-repeat;
+            /* 可添加多个动画，用逗号隔开 */
+            animation: bear 1s steps(8) infinite, move 3s forwards;
+        }
+        
+        @keyframes bear {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1124px 0;
+            }
+        }
+        
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 50%;
+                /* margin-left: -100px; */
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

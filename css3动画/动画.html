@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画animation</title>
+    <!-- 动画是css3中最具有颠覆性的特征之一，可通过设置多个节点来精确控制一个或一组动画，常用来实现复杂的动画效果 -->
+    <!-- 相比较过渡，动画可以实现更多变化，更多控制，连续自动播放等效果。 -->
+    <!-- 制作动画分为两步：1，先定义动画。2，zai使用（调用）动画 -->
+    <style>
+        /* 页面一打开，一个盒子从左边走到右边 */
+        
+        @keyframes move {
+            /* 开始状态 */
+            0% {
+                transform: translateX(0px);
+            }
+            /* 结束状态 */
+            100% {
+                transform: translateX(1000px);
+            }
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 2，调用动画 */
+            /*动画名称 */
+            animation-name: move;
+            /* /持续时间 */
+            animation-duration: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+</body>
+
+</html>

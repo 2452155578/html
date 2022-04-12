@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的叠放顺序z-index</title>
+    <style>
+        /* 语法; 选择器{z-index：1} */
+        /* 数值可以是正整数，负整数或者0，默认是auto。数值越大，盒子越靠上。 */
+        
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .xiongda {
+            z-index: 7;
+            background-color: pink;
+        }
+        
+        .xionger {
+            z-index: 5;
+            top: 50px;
+            left: 50px;
+            background-color: palegreen;
+        }
+        
+        .qiangge {
+            z-index: 3;
+            top: 100px;
+            left: 100px;
+            background-color: powderblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xiongda">熊大</div>
+    <div class="box xionger">熊二</div>
+    <div class="box qiangge">光头强</div>
+</body>
+
+</html>

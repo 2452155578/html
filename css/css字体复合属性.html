@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css字体的复合属性</title>
+    <style>
+        /* 想要div中的字体变轻倾斜，加粗  ，字号设置为16的像素，还是微软雅黑 */
+        
+        div {
+            /* font-style: italic;
+             font-weight: 700;
+             font-size: 16px;
+            font-family: 微软雅黑; */
+            /* font: font-style font-weight font-size/lin-height font-family;   要有顺序的*/
+            /* font: italic 700 16px 'Microsoft yahei'; */
+            /* 可省略粗细  weight  字体样式  style */
+            font: 26px 'Microsoft yahei';
+        }
+    </style>
+</head>
+
+<body>
+    <div>你是我的小呀小苹果，怎末爱你都不嫌多</div>
+</body>
+
+</html>

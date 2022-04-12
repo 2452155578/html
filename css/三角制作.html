@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角制作</title>
+    <style>
+        .box1 {
+            width: 0;
+            height: 0;
+            /* border: 10px solid pink ; */
+            border-top: 10px solid pink;
+            border-right: 10px solid blue;
+            border-bottom: 10px solid red;
+            border-left: 10px solid yellow;
+        }
+        
+        .box2 {
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            /*  */
+            border-top-color: pink;
+            /* 三角朝的方向不一样只需要把top改了 */
+            margin: 20px;
+        }
+        
+        .jd {
+            position: relative;
+            /* 子绝父相 */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        
+        .jd span {
+            position: absolute;
+            /* 绝对定位，才能压住父盒子 */
+            right: 15px;
+            top: -10px;
+            width: 0;
+            height: 0;
+            /* 小三角必需为0 */
+            line-height: 0;
+            font-size: 0;
+            /* 为了照顾兼容性 */
+            border: 5px solid transparent;
+            border-bottom-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="jd"><span></span></div>
+</body>
+
+</html>

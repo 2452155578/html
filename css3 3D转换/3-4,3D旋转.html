@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D旋转</title>
+    <style>
+        body {
+            perspective: 300px;
+        }
+        
+        img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        
+        img:hover {
+            /* transform: rotate3d(x, y, z, deg); */
+            transform: rotate3d(1, 0, 0, 180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../1.jpg.jpg" alt="">
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<!-- 表单标签：为了收集信息 。有表单域，表单控件（表单元素）和提示信息3部分组成-->
+<!-- 表单域表示表单元素的区域<form>,从而提交到服务器 -->
+<!-- <form action="url地址" method="提交方式" name="表单域名称">各种表单元素控件</form> -->
+
+<body>
+    <form action="demo.php" method="post" name="name1">
+        <!-- input输入表单元素  select下拉表单元素  textarea文本域元素 -->
+        <!-- button:定义可点击按钮
+              checkbox：定义复选框
+            file：定义输入字段和”浏览按钮“，提供上传文件
+        hidden：定义隐藏输入字段
+        image：定义图像形式的提交按钮
+       password：定义密码字段，该字段中的字符被隐藏
+       radio：定义单选按钮
+      reset：定义重置按钮，清除表单中所有的数据
+       submit：定义提交按钮，提交按钮会把表单数据发送到服务器
+       text：定义单行的输入字段，用户可在其中输入文本，默认宽度20个字符
+        -->
+        <!--  文本框-->
+        <!-- checked表示默认按钮，，，，，单选框和复选框可以设置checked属性，当页面打开时，就可以默认选中这个按钮 -->
+        用户名：<input type="text" name="username" value="输入用户名" maxlength="6"><br> 密码 ：<input type="password" name="pwd" value="输入密码"><br>
+        <!-- maxlength  正整数值，输入的最大长度可设置 -->
+        <!--    radio  单选框 -->
+        性别： 男<input type="radio" name="sex" value="男"> 女<input type="radio" name="sex" value="女" checked="checked"><br>
+        <!-- checkbox  多选框    value是给后台人员看的-->
+        爱好：吃饭<input type="checkbox" value="吃饭" checked="checked"> 睡觉<input type="checkbox" value="睡觉" checked="checked"> 打豆豆<input type="checkbox" value="打豆豆"><br>
+        <!-- submit    提交按钮   reser     重置按钮 -->
+        <input type="submit" value="免费提交"><input type="reset" value="重置按钮">
+        <!-- botton   普通按钮  后期结合js使用-->
+        <input type="button" value="获取验证码"><br>
+        <!-- 上传文件使用  file  -->
+        <input type="file"></form>
+</body>
+
+</html>
